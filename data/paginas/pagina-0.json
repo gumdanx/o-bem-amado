@@ -1,0 +1,48 @@
+{
+    "meta": {
+        "id": "pagina-0",
+        "tipo": "pagina",
+        "numero": 0,
+        "unidade": null,
+        "titulo": "Capa",
+        "capa": true
+    },
+    "sections": [
+        {
+            "type": "header",
+            "title": "O Bem-Amado",
+            "subtitle": "Dias Gomes"
+        },
+        {
+            "type": "text",
+            "title": "Peça",
+            "content": "Peça em ato único e nove quadros"
+        },
+        {
+            "type": "list",
+            "title": "Personagens",
+            "items": [
+                "Chico Moleza",
+                "Dermeval",
+                "Mestre Ambrósio",
+                "Zelão",
+                "Odorico",
+                "Dorotéa",
+                "Judicéa",
+                "Dulcinéa",
+                "Dirceu Borboleta",
+                "Neco Pedreira",
+                "Vigário",
+                "Zeca Diabo",
+                "Ernesto",
+                "Hilário Cajazeira"
+            ]
+        },
+        {
+            "type": "text",
+            "title": "Ação",
+            "content": "Sucupira, pequena cidade do litoral baiano."
+        }
+    ],
+    "linhas": []
+}
