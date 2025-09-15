@@ -1,13 +1,71 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>O Bem‑Amado — Leitura</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="left">
+      <button id="hamburger" class="icon-btn mobile-only" aria-label="Abrir lista" title="Lista">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" fill="currentColor" />
+        </svg>
+      </button>
+      <div id="toggles" class="desktop-only" role="tablist" aria-label="Agrupamento">
+        <button class="toggle" data-kind="page" aria-pressed="true" role="tab">Página</button>
+        <button class="toggle" data-kind="quadro" aria-pressed="false" role="tab">Quadro</button>
+        <button class="toggle" data-kind="unidade" aria-pressed="false" role="tab">Unidade</button>
+      </div>
+    </div>
+
+    <div class="center">
+      <button id="prevBtn" class="icon-btn" aria-label="Anterior" title="Anterior">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M15.41 16.59 10.83 12l4.58-4.59L14 6l-6 6 6 6z" fill="currentColor" />
+        </svg>
+      </button>
+      <h1>O Bem‑Amado</h1>
+    </div>
+
+    <div class="right">
+      <button id="nextBtn" class="icon-btn" aria-label="Próximo" title="Próximo">
+        <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="m8.59 16.59 4.58-4.59-4.58-4.59L10 6l6 6-6 6z" fill="currentColor" />
+        </svg>
+      </button>
+
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Buscar" aria-label="Buscar" />
+        <button id="searchToggle" class="icon-btn mobile-only" aria-label="Buscar" title="Buscar">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M15.5 14h-.79l-.28-.27a6.471 6.471 0 0 0 1.57-4.23C15.99 6.01 13.98 4 11.5 4S7.01 6.01 7.01 9.5 9.02 15 11.5 15c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-4 0C9.01 14 7 11.99 7 9.5S9.01 5 11.5 5 16 7.01 16 9.5 13.99 14 11.5 14z"
+              fill="currentColor" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <aside id="groups" aria-label="Lista de grupos">
+      <div id="mobileToggles" class="mobile-only"></div>
+    </aside>
+    <section id="content" aria-live="polite">
+      <div class="placeholder">Selecione um grupo à esquerda.</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>Site para fins educativos • Direitos reservados aos detentores legais da obra • GDX2025</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>
